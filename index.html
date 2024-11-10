@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>churrascaria-renatão</title>
+</head>
+<body>
+    
+    <header>
+        <div class="background">
+            <ul class="header">
+                <a href="#"><li class="background">Home</li></a>
+                <a href="#menu"><li class="background">Menu </li></a>
+                <a onclick="exibirHistorico()"><li class="background">Reservas</li></a>
+                <a href="https://wa.me/5511998611797/?text=Olá%20gostaria%20do%20cardápio%20com%20os%20preços%20da%20Churrascaria%20do%20Renatão!!%20"><li class="background">Contato</li></a>
+                <!-- clicando em "Contato" é redirecionado para o meu WhatsApp com uma mensagem pronta pedindo o cardápio da churrascaria -->
+            </ul>
+        </div>
+    </header>
+
+    <main class="parte-principal">
+        <h3>Bem-vindo à Churrascaria do Renatão!!</h3>
+        <p>Desfrute do melhor churrasco de todos</p>
+        <a href="#menu"><input type="button" value="Ver Menu" ></a>
+        
+        <h2 class="texto-centro" id="menu">Menu</h2>
+        
+        <div class="container">
+            <div class="card">
+                <img src="../imagens/image.png">
+                <h2>Picanha</h2>
+                <p>Preço: R$44,99</p>
+            </div>
+
+            <div class="card">
+                <img src="../imagens/image2.png">
+                <h2>Fraldinha</h2>
+                <p>Preço: R$33,99</p>
+            </div>
+
+            <div class="card">
+                <img src="../imagens/image3.png" class="terceira-imagem">
+                <h2>Cordeiro</h2>
+                <p>Preço: R$66,90</p>
+            </div>
+        </div>
+        
+        <div class="reservas"> 
+            <h2>Reservas</h2>
+
+            <form class="formulario-reserva">
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required cleaned><br><br>
+                
+                <label for="e-mail">E-mail: </label>
+                <input type="email" id="email" name="e-mail" required><br><br>
+
+                <label for="telefone">Telefone: </label>
+                <input type="text" id="telefone" name="telefone" required><br><br>
+
+                <label for="data">Data: </label>
+                <input type="datetime-local" id="data" name="data" required><br><br>
+
+                <input type="reset" value="Reservar" onclick="realizarReserva()">
+
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contato-direto">
+            <h3>Contato:</h3>
+            <p>Telefone: <strong>(11) 12345-6789</strong></p>
+            <p>E-mail: <strong>renatolimachurrascaotop@email.com</strong></p>
+            <p>Endereço: <strong>Rua dos Churrasqueiros, 123 - São Paulo, SP</strong></p>
+        </div>
+        <div class="direitos-reservados">
+            © 2024 Churrascaria do Renatão
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
